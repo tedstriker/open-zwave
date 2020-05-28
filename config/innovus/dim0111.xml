@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Product xmlns="http://code.google.com/p/open-zwave/">
+
+  <!-- Configuration Parameters -->
+  <CommandClass id="112">
+    <Value genre="config" instance="1" index=0" value=99" label=Maximum dim level" units="" size=1" min=0" max=99" type="byte">
+      <Help>Maximum dim level</Help>
+    </Value>
+    <Value genre="config" instance="1" index=1" value=0" label=Report node" units="" size=1" min=0" max=255" type="byte">
+      <Help>Report Node, reports changes in level to this node id. Disabled if 0.</Help>
+    </Value>
+    <Value genre="config" instance="1" index=2" value=1" label=B&O IR support" units="" size=1" min=0" max=255" type="list">
+      <Help>B&O IR support is disabled if 0 otherwise enabled.</Help>
+      <Item value="0" label="disabled">
+      <Item value="1" label="enabled">
+    </Value>
+    <Value genre="config" instance="1" index=3" value=1" label=Dimming type" units="" size=1" min=0" max=255" type="list">
+      <Help>Dimming Type, trailing edge enabled if 0 otherwise leading edge enabled.</Help>
+      <Item value="0" label="Trailing edge">
+      <Item value="1" label="Leading edge">
+    </Value>
+    <Value genre="config" instance="1" index=4" value=8" label=Dimming level duration" units="" size=1" min=1" max=255" type="byte">
+      <Help>Dimming level duration</Help>
+    </Value>
+    <Value genre="config" instance="1" index=5" value=1" label=Set level duration" units="" size=1" min=1" max=255" type="byte">
+      <Help>Default Set Level Duration, how long time it takes to set one level in 0.01s.</Help>
+    </Value>
+    <Value genre="config" instance="1" index=6" value=158" label=Long dim duration" units="" size=1" min=0" max=255" type="byte">
+      <Help>Long dim duration</Help>
+    </Value>
+    <Value genre="config" instance="1" index=7" value=50" label=Touch press time" units="" size=1" min=1" max=255" type="byte">
+      <Help>Touch press time</Help>
+    </Value>
+    <Value genre="config" instance="1" index=8" value=100" label=Touch Multiple Press Time" units="" size=1" min=0" max=255" type="byte">
+      <Help>No specific usage in this product</Help>
+    </Value>
+    <Value genre="config" instance="1" index=9" value=40" label=Touch Hold Time" units="" size=1" min=0" max=255" type="byte">
+      <Help>Touch Hold Time</Help>
+    </Value>
+    <Value genre="config" instance="1" index=10" value=168" label=Network Update Interval" units="" size=2" min=0" max=65535" type="short">
+      <Help>Network Update Interval</Help>
+    </Value>
+    <Value genre="config" instance="1" index=11" value=2362" label=Rediscover Interval" units="" size=2" min=0" max=65535" type="short">
+      <Help>Rediscover Interval, time between rediscoveries in 256 seconds. Disabled if 0.</Help>
+    </Value>
+  </CommandClass>
+
+  <!-- Association Groups -->
+  <CommandClass id="133">
+    <Associations num_groups="1">
+      <Group index="1" label="Dimmer" max_associations="5" auto="true" />
+    </Associations>
+  </CommandClass>
+
+</Product>
