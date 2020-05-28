@@ -974,6 +974,8 @@
     <Product id="0001" name="SmoothRemote Controller" type="0002"/>
     <Product id="0002" name="RAone SmartPower Wall Appliance Module" type="0001"/>
     <Product id="0001" name="RAone SmartDimmer Wall Dimmer Module" type="0001"/>
+    <Product config="innovus/pow0110.xml" id="0001" name="RAone SmartPower" type="0010"/>
+    <Product config="innovus/dim0111.xml" id="0001" name="RAone SmartDimmer" type="0011"/>
   </Manufacturer>
   <Manufacturer id="0312" name="Inovelli">
     <Product config="inovelli/nzw30.xml" id="1e01" name="NZW30 Smart Switch" type="1e01"/>
